@@ -594,13 +594,18 @@ button {
 
 /* Mise en avant de la preuve visuelle (Trace 1 et similaires) */
 .trace-body--featured {
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  gap: 1.5rem;
   align-items: start;
 }
 
 .trace-body--featured .trace-text {
+  order: 1;
   max-width: none;
+}
+
+.trace-body--featured .trace-figure {
+  order: 2;
 }
 
 .trace-figure--featured .trace-image-frame {

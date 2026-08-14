@@ -13,3 +13,10 @@ Portfolio BUT 2 Informatique (IUT Belfort-Montbéliard) réalisé à l’issue d
 - **Axe 02 — Suivi de projet** — traces 5 à 7 (cahier des charges, communication, benchmarks)
 - **Axe 03 — Intégration** — traces 8 à 10 (passation, widget intranet, collaboration)
 
+## Lancer en local
+
+```bash
+python3 -m http.server 8765
+```
+
+Puis ouvrir [http://localhost:8765](http://localhost:8765).
