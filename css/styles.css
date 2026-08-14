@@ -1,4 +1,4 @@
-/* ── Variables globales — thème sombre ── */
+/* --- Variables globales - thème sombre --- */
 :root {
   color-scheme: dark;
   --font-sans: "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
@@ -10,7 +10,7 @@
   --shadow-lg: 0 4px 24px rgb(0 0 0 / 0.45);
   --transition: 0.22s ease;
 
-  /* Thème par défaut — Accueil */
+  /* Thème par défaut - Accueil */
   --accent: #60a5fa;
   --accent-soft: rgb(96 165 250 / 0.18);
   --accent-muted: rgb(96 165 250 / 0.1);
@@ -80,7 +80,7 @@
   --sidebar-note-text: #c4b5fd;
 }
 
-/* ── Scrollbar sombre ── */
+/* --- Scrollbar sombre --- */
 .page-frame,
 .sidebar {
   scrollbar-width: thin;
@@ -94,7 +94,7 @@
   border-radius: 999px;
 }
 
-/* ── Reset & base ── */
+/* --- Reset & base --- */
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
@@ -128,7 +128,7 @@ button {
   background: none;
 }
 
-/* ── Header ── */
+/* --- Header --- */
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
@@ -181,14 +181,14 @@ button {
 }
 .menu-toggle:hover { background: var(--surface-2); }
 
-/* ── App Shell ── */
+/* --- App Shell --- */
 .app-shell {
   display: flex;
   height: 100dvh;
   padding-top: var(--header-h);
 }
 
-/* ── Sidebar ── */
+/* --- Sidebar --- */
 .sidebar {
   width: var(--sidebar-w);
   flex-shrink: 0;
@@ -257,7 +257,7 @@ button {
   font-size: 0.78rem;
 }
 
-/* ── Main content ── */
+/* --- Main content --- */
 .page-frame {
   flex: 1;
   overflow-y: auto;
@@ -276,7 +276,7 @@ button {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Sub-navigation ── */
+/* --- Sub-navigation --- */
 .subnav {
   display: flex;
   flex-wrap: wrap;
@@ -311,7 +311,7 @@ button {
 .sub-panel { display: none; }
 .sub-panel.active { display: block; animation: fadeIn 0.25s ease; }
 
-/* ── Typography blocks ── */
+/* --- Typography blocks --- */
 .page-title {
   font-size: 1.45rem;
   font-weight: 700;
@@ -348,7 +348,7 @@ button {
 
 .section-block p:last-child { margin-bottom: 0; }
 
-/* ── Hero (Accueil) ── */
+/* --- Hero (Accueil) --- */
 .hero {
   display: grid;
   grid-template-columns: 1fr 17rem;
@@ -474,7 +474,7 @@ button {
   color: var(--accent);
 }
 
-/* ── Grille accueil ── */
+/* --- Grille accueil --- */
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -558,7 +558,7 @@ button {
 .axis-tag.coral  { background: #f97316; }
 .axis-tag.violet { background: #8b5cf6; }
 
-/* ── Trace layout ── */
+/* --- Trace layout --- */
 .trace-header { margin-bottom: 1rem; }
 
 .skill-tokens {
@@ -722,7 +722,7 @@ button {
 .skill-reference.red    { background: var(--ref-red-bg);    color: var(--ref-red-text); }
 .skill-reference.teal   { background: var(--ref-teal-bg);   color: var(--ref-teal-text); }
 
-/* ── Figure / capture ── */
+/* --- Figure / capture --- */
 .trace-figure {
   margin: 0;
 }
@@ -835,7 +835,7 @@ button {
 .screenshot-annotation.a2 { top: 45%; right: 10%; }
 .screenshot-annotation.a3 { bottom: 22%; left: 20%; }
 
-/* ── Bilan court ── */
+/* --- Bilan court --- */
 .bilan-court {
   margin-top: 1rem;
   padding: 0.85rem 1rem;
@@ -851,7 +851,7 @@ button {
   color: var(--accent);
 }
 
-/* ── Bilan de présentation par axe ── */
+/* --- Bilan de présentation par axe --- */
 .axe-summary-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -959,7 +959,7 @@ button {
   color: var(--text);
 }
 
-/* ── Cartes d'évaluation ── */
+/* --- Cartes d'évaluation --- */
 .evaluation-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1065,7 +1065,7 @@ button {
   color: var(--text-muted);
 }
 
-/* ── Bilan axe (aligné sur evaluation-card) ── */
+/* --- Bilan axe (aligné sur evaluation-card) --- */
 .trace-subtitle {
   margin: 0.35rem 0 0;
   font-size: 0.88rem;
@@ -1172,7 +1172,7 @@ button {
   line-height: 1.45;
 }
 
-/* ── Carrousel de traces ── */
+/* --- Carrousel de traces --- */
 .trace-carousel {
   position: relative;
   width: 100%;
@@ -1262,7 +1262,7 @@ button {
   to { opacity: 1; }
 }
 
-/* ── Placeholder traces ── */
+/* --- Placeholder traces --- */
 .placeholder-trace {
   background: var(--surface);
   border: 1px dashed var(--border);
@@ -1273,7 +1273,7 @@ button {
   font-size: 0.88rem;
 }
 
-/* ── Lightbox image ── */
+/* --- Lightbox image --- */
 .image-lightbox {
   position: fixed;
   inset: 0;
@@ -1370,7 +1370,7 @@ body.lightbox-open {
   overflow: hidden;
 }
 
-/* ── Overlay mobile sidebar ── */
+/* --- Overlay mobile sidebar --- */
 .sidebar-overlay {
   display: none;
   position: fixed;
@@ -1379,7 +1379,7 @@ body.lightbox-open {
   z-index: 90;
 }
 
-/* ── Responsive ── */
+/* --- Responsive --- */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .home-grid { grid-template-columns: 1fr; }
