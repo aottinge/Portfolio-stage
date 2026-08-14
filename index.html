@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de stage — Axel Ottinger, BUT 2 Informatique, EIMI — Chatbot RAG Intranet">
+  <meta name="theme-color" content="#0d1117">
+  <title>Portfolio de stage — Axel Ottinger | EIMI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-identity">
+      <span class="header-name">Axel Ottinger</span>
+      <span class="header-role">BUT 2 Informatique — IUT Belfort-Montbéliard</span>
+    </div>
+    <div class="header-contact">
+      <a href="mailto:axel.ottinger@edu.univ-fcomte.fr" aria-label="Envoyer un e-mail">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        axel.ottinger@edu.univ-fcomte.fr
+      </a>
+    </div>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="sidebar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </header>
+
+  <div class="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="app-shell">
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navigation principale">
+      <ul class="sidebar-nav">
+        <li>
+          <a href="#accueil" data-page="accueil" class="active">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Accueil
+          </a>
+        </li>
+        <li>
+          <a href="#technique" data-page="technique">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Technique
+          </a>
+        </li>
+        <li>
+          <a href="#projet" data-page="projet">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+            Suivi de projet
+          </a>
+        </li>
+        <li>
+          <a href="#integration" data-page="integration">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Intégration
+          </a>
+        </li>
+      </ul>
+      <p class="sidebar-note">
+        <strong>Stage EIMI</strong>
+        8 semaines — Chatbot RAG pour l'intranet : extraction PDF, ChromaDB, API Python et interface HTML/JS.
+      </p>
+    </aside>
+
+    <main class="page-frame" role="main">
+
+      <!-- ═══ PAGE ACCUEIL ═══ -->
+      <section id="panel-accueil" class="page-panel active" aria-label="Accueil">
+
+        <div class="hero">
+          <div class="hero-main">
+            <h1>Développement d'un Chatbot RAG Intelligent pour l'Intranet d'EIMI</h1>
+            <p class="lead">
+              Stage de 8 semaines en développement logiciel et intelligence artificielle.
+              Ce portfolio retrace l'extraction documentaire, la vectorisation sous ChromaDB,
+              le backend Python et l'intégration HTML/JS sur l'intranet d'entreprise d'EIMI.
+            </p>
+            <nav class="quick-nav" aria-label="Accès rapide aux axes">
+              <a href="#technique" class="quick-btn teal" data-page="technique" data-sub="technique-trace-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Axe Technique
+              </a>
+              <a href="#projet" class="quick-btn coral" data-page="projet" data-sub="projet-trace-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/></svg>
+                Suivi de projet
+              </a>
+              <a href="#integration" class="quick-btn violet" data-page="integration" data-sub="integration-trace-8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                Intégration
+              </a>
+            </nav>
+          </div>
+
+          <aside class="hero-aside" aria-label="Fiche entreprise">
+            <div class="hero-company-logo">
+              <img src="assets/eimi-logo.png" alt="Logo EIMI Groupe" width="200" height="80">
+            </div>
+            <dl>
+              <dt>Secteur</dt>
+              <dd>Génie climatique, électrique et maintenance</dd>
+              <dt>Contexte</dt>
+              <dd>Intranet d'entreprise</dd>
+              <dt>Mots-clés</dt>
+              <dd>
+                <span class="tag-list">
+                  <span class="tag">Chatbot RAG</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">ChromaDB</span>
+                </span>
+              </dd>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="home-grid">
+          <article class="home-card">
+            <h2 class="section-title">Contexte entreprise</h2>
+            <p>
+              J'ai été intégré au sein du service Méthodes d'EIMI Siège, 
+              une entreprise spécialisée dans le génie climatique, le génie électrique, 
+              la maintenance multitechnique et les services associés. Mon stage s'est 
+              déroulé en autonomie technique sous la supervision de mon maître de stage, 
+              Vincent RAMOUSSET (Technicien informatique), et en collaboration avec 
+              l'équipe du service Méthodes. L'objectif principal était de répondre à un 
+              besoin métier concret : simplifier et accélérer l'accès à la documentation 
+              interne de l'entreprise, aujourd'hui dispersée dans une grande quantité de 
+              fichiers PDF sur l'intranet.
+            </p>
+          </article>
+
+          <article class="home-card">
+            <h2 class="section-title">Sujet de stage</h2>
+            <p>
+              EIMI souhaitait simplifier et moderniser la recherche d'informations au 
+              sein de sa masse documentaire interne. Mon projet consistait à concevoir un 
+              assistant conversationnel intelligent en langage naturel, capable de répondre
+              aux questions des collaborateurs à partir des procédures, notices techniques 
+              et documents de référence de l'intranet. Pour cela, j'ai mis en place une 
+              architecture RAG (Retrieval-Augmented Generation) multimodale, capable de 
+              traiter et d'analyser à la fois le contenu textuel et les éléments visuels 
+              (schémas, tableaux) des documents PDF.
+            </p>
+            <figure class="home-card-illustration">
+              <img src="trace/trace3.2.png" alt="Aperçu du chatbot RAG intégré sur l'intranet Canal EIMI">
+              <figcaption>Aperçu de l'assistant de recherche documentaire RAG sur Canal EIMI</figcaption>
+            </figure>
+          </article>
+
+          <article class="home-card">
+            <h2 class="section-title">Environnement de travail</h2>
+            <div class="tool-badges">
+              <span class="tool-badge">Python</span>
+              <span class="tool-badge">ChromaDB</span>
+              <span class="tool-badge">VS Code</span>
+              <span class="tool-badge">Git / GitHub</span>
+              <span class="tool-badge">FastAPI / Pydantic</span>
+              <span class="tool-badge">HTML / JavaScript</span>
+            </div>
+          </article>
+
+          <article class="home-card">
+            <h2 class="section-title">Synthèse des compétences</h2>
+            <p>Trois savoir-faire généraux structurent ce portfolio et couvrent l'ensemble du stage :</p>
+            <div class="axis-tags">
+              <a href="#technique" class="axis-tag teal" data-page="technique" data-sub="technique-trace-1">Savoir-faire général 1 — Technique &amp; architecture</a>
+              <a href="#projet" class="axis-tag coral" data-page="projet" data-sub="projet-trace-5">Savoir-faire général 2 — Suivi de projet</a>
+              <a href="#integration" class="axis-tag violet" data-page="integration" data-sub="integration-trace-8">Savoir-faire général 3 — Intégration en entreprise</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ═══ AXE 01 — TECHNIQUE ═══ -->
+      <section id="panel-technique" class="page-panel" aria-label="Axe Technique">
+
+        <p class="page-subtitle">Axe 01 — Savoir-faire général 1</p>
+        <h1 class="page-title">Technique</h1>
+        <p class="section-block" style="margin-top:-0.5rem;margin-bottom:1rem;font-size:0.88rem;color:var(--text-muted);">
+          Traitement de flux textuels, vectorisation sémantique et développement d'API IA
+        </p>
+
+        <nav class="subnav" aria-label="Sous-navigation Technique">
+          <a href="#" data-sub="technique-trace-1" class="active">Trace 1</a>
+          <a href="#" data-sub="technique-trace-2">Trace 2</a>
+          <a href="#" data-sub="technique-trace-3">Trace 3</a>
+          <a href="#" data-sub="technique-trace-4">Trace 4</a>
+          <a href="#" data-sub="technique-bilan">Bilan</a>
+        </nav>
+
+        <!-- Trace 1 -->
+        <article id="sub-technique-trace-1" class="sub-panel active" data-sub="technique-trace-1">
+          <header class="trace-header">
+            <p class="trace-label">Trace 1 — Axe Technique</p>
+            <h2 class="page-title">Découpage intelligent et organisation des documents PDF</h2>
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Extraction &amp; Isolation</li>
+              <li class="skill-token violet">Chunking sémantique</li>
+              <li class="skill-token orange">Structuration &amp; Métadonnées</li>
+              <li class="skill-token blue">Association multimodale</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure teal trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace1.1.png" alt="Capture d'écran annotée du code Python de la méthode _split (lignes 48 à 79) — repères vert, violet, orange et bleu">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 1 — Méthode Python <code>_split</code> (L. 48-79)&nbsp;: [1] Extraction &amp; Isolation (vert),
+                [2] Chunking sémantique (violet), [3] Structuration &amp; Métadonnées (orange),
+                [4] Association multimodale (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 1 montre la méthode Python <code>_split</code> (lignes 48 à 79) développée
+                  pour le projet de Chatbot chez EIMI. Elle s'insère au tout début du pipeline RAG&nbsp;:
+                  son rôle est de lire les documents PDF techniques internes bruts et de les découper
+                  en segments de texte exploitables par le moteur de recherche d'IA.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  Le savoir-faire
+                  <span class="skill-reference green">Extraction &amp; Isolation <span class="skill-reference-note">(vert)</span></span>
+                  permet d'isoler le texte brut du document et de récupérer ses informations sources
+                  via la méthode <code>_extract_doc_parts</code> (repère&nbsp;1, L.&nbsp;51-55).
+                </p>
+                <p>
+                  Le
+                  <span class="skill-reference violet">Chunking sémantique <span class="skill-reference-note">(violet)</span></span>
+                  segmente le contenu extrait en blocs de taille contrôlée (<code>_chunk_size</code>,
+                  <code>_chunk_overlap</code>) grâce à <code>recursive_split_text</code>, en préservant
+                  la continuité du sens entre deux passages (repère&nbsp;2, L.&nbsp;57-59).
+                </p>
+                <p>
+                  La
+                  <span class="skill-reference orange">Structuration &amp; Métadonnées <span class="skill-reference-note">(orange)</span></span>
+                  encapsule chaque segment dans un objet structuré&nbsp;: identifiant unique
+                  (<code>chunk_id</code>) et métadonnées associées (<code>document_id</code>,
+                  <code>document_name</code>, <code>page</code>, <code>file_path</code>,
+                  <code>source_type</code>) (repère&nbsp;3, L.&nbsp;63-76).
+                </p>
+                <p>
+                  L'<span class="skill-reference blue">Association multimodale <span class="skill-reference-note">(bleu)</span></span>
+                  relie les visuels du PDF (tableaux, schémas) aux segments textuels correspondants
+                  via <code>attach_images_to_chunks</code>, préparant l'indexation multimodale
+                  pour le modèle de langage (repère&nbsp;4, L.&nbsp;78-79).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 2 -->
+        <article id="sub-technique-trace-2" class="sub-panel" data-sub="technique-trace-2">
+          <header class="trace-header">
+            <p class="trace-label">Trace 2 — Axe Technique</p>
+            <h2 class="page-title">Stockage vectoriel et recherche par le sens dans ChromaDB</h2>
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Structuration des métadonnées</li>
+              <li class="skill-token violet">Injection vectorielle ChromaDB</li>
+              <li class="skill-token orange">Interrogation par similarité</li>
+              <li class="skill-token blue">Filtrage par distance limite</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure teal trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace1.2.png" alt="Trace 2 — Code Python d'indexation et de recherche sémantique dans ChromaDB (lignes 84 à 123)">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 2 — Gestionnaire ChromaDB (L. 84-123)&nbsp;: [1] Structuration des métadonnées (vert),
+                [2] Injection vectorielle ChromaDB (violet), [3] Interrogation par similarité (orange),
+                [4] Filtrage par distance limite (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 2 montre les fonctions Python d'enregistrement et de recherche
+                  (lignes 84 à 123) au sein de la base de données vectorielle ChromaDB.
+                  Ce composant est essentiel pour permettre au chatbot de retrouver instantanément
+                  les passages de documents les plus pertinents par rapport à la question posée
+                  par un salarié d'EIMI.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  La <span class="skill-reference green">Structuration des métadonnées <span class="skill-reference-note">(vert)</span></span>
+                  prépare les tableaux d'injection en associant à chaque texte son identifiant unique
+                  et son mode d'embedding (repère&nbsp;1, L.&nbsp;84-93).
+                </p>
+                <p>
+                  L'<span class="skill-reference violet">Injection vectorielle ChromaDB <span class="skill-reference-note">(violet)</span></span>
+                  enregistre de façon permanente les vecteurs et leurs textes associés dans la
+                  collection via <code>collection.add()</code> (repère&nbsp;2, L.&nbsp;95-100).
+                </p>
+                <p>
+                  L'<span class="skill-reference orange">Interrogation par similarité <span class="skill-reference-note">(orange)</span></span>
+                  (<code>collection.query</code>) compare la question de l'utilisateur avec la base
+                  de connaissances et extrait les passages les plus proches sémantiquement
+                  (repère&nbsp;3, L.&nbsp;109-122).
+                </p>
+                <p>
+                  Le <span class="skill-reference blue">Filtrage par distance limite <span class="skill-reference-note">(bleu)</span></span>
+                  (<code>_filter_by_distance</code>) élimine les documents qui s'éloignent trop du
+                  sujet pour éviter d'envoyer de fausses informations à l'IA (repère&nbsp;4, L.&nbsp;123).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 3 -->
+        <article id="sub-technique-trace-3" class="sub-panel" data-sub="technique-trace-3">
+          <header class="trace-header">
+            <p class="trace-label">Trace 3 — Axe Technique</p>
+            <h2 class="page-title">Gestion de l'interface du Chatbot et envoi fluide des messages</h2>
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Interception du clic</li>
+              <li class="skill-token violet">Affichage du message</li>
+              <li class="skill-token orange">Feedback visuel d'attente</li>
+              <li class="skill-token blue">Envoi sécurisé</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure teal trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace1.3.png" alt="Trace 3 — Code JavaScript de gestion du formulaire du chatbot (lignes 272 à 304)">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 3 — Script JavaScript d'interface (L. 272-304)&nbsp;: [1] Interception du clic (vert),
+                [2] Affichage du message (violet), [3] Feedback visuel d'attente (orange),
+                [4] Envoi sécurisé (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 3 présente le script JavaScript (lignes 272 à 304) qui gère le formulaire
+                  de discussion du chatbot sur l'intranet d'EIMI. Elle assure une navigation fluide
+                  en permettant d'envoyer des questions et de mettre à jour la conversation
+                  instantanément sans recharger la page web.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  L'<span class="skill-reference green">Interception du clic <span class="skill-reference-note">(vert)</span></span>
+                  bloque le comportement par défaut de l'ordinateur (<code>e.preventDefault()</code>)
+                  lors de la soumission du formulaire (repère&nbsp;1, L.&nbsp;272-275).
+                </p>
+                <p>
+                  L'<span class="skill-reference violet">Affichage du message <span class="skill-reference-note">(violet)</span></span>
+                  injecte immédiatement le message saisi dans la fenêtre de discussion
+                  (<code>addMessage('user', q)</code>) et sauvegarde la session (repère&nbsp;2,
+                  L.&nbsp;277-285).
+                </p>
+                <p>
+                  Le <span class="skill-reference orange">Feedback visuel d'attente <span class="skill-reference-note">(orange)</span></span>
+                  désactive la saisie et affiche l'indicateur temporaire
+                  <em>«&nbsp;Recherche en cours...&nbsp;»</em> pour rassurer l'utilisateur
+                  (repère&nbsp;3, L.&nbsp;286-290).
+                </p>
+                <p>
+                  L'<span class="skill-reference blue">Envoi sécurisé <span class="skill-reference-note">(bleu)</span></span>
+                  annule les recherches précédentes (<code>abortSessionSearch</code>) et transmet
+                  la question au serveur backend via un appel <code>fetch()</code> asynchrone
+                  (repère&nbsp;4, L.&nbsp;292-303).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 4 -->
+        <article id="sub-technique-trace-4" class="sub-panel" data-sub="technique-trace-4">
+          <header class="trace-header">
+            <p class="trace-label">Trace 4 — Axe Technique</p>
+            <h2 class="page-title">Construction du contexte et préparation de la réponse de l'IA</h2>
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Recherche des sources</li>
+              <li class="skill-token violet">Fusion du texte</li>
+              <li class="skill-token orange">Inspection des visuels</li>
+              <li class="skill-token blue">Préparation du prompt</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure teal trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace1.4.png" alt="Trace 4 — Pipeline RAG en Python pour l'assemblage de la réponse de l'IA (lignes 177 à 213)">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 4 — Orchestrateur RAG Python (L. 177-213)&nbsp;: [1] Recherche des sources (vert),
+                [2] Fusion du texte (violet), [3] Inspection des visuels (orange),
+                [4] Préparation du prompt (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 4 présente l'orchestrateur principal du pipeline RAG en Python
+                  (lignes 177 à 213). Son rôle est de regrouper les informations extraites des
+                  documents, d'y joindre les images nécessaires et de préparer le dossier complet
+                  qui sera soumis au modèle d'intelligence artificielle pour formuler la réponse
+                  finale.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  La <span class="skill-reference green">Recherche des sources <span class="skill-reference-note">(vert)</span></span>
+                  lance la recherche dans la base de données avec la question et l'historique de
+                  l'utilisateur (repère&nbsp;1, L.&nbsp;177-184).
+                </p>
+                <p>
+                  La <span class="skill-reference violet">Fusion du texte <span class="skill-reference-note">(violet)</span></span>
+                  assemble les meilleurs passages trouvés et définit un message de sécurité si aucun
+                  document ne correspond pour éviter les fausses réponses (repère&nbsp;2, L.&nbsp;186-192).
+                </p>
+                <p>
+                  L'<span class="skill-reference orange">Inspection des visuels <span class="skill-reference-note">(orange)</span></span>
+                  vérifie si la réponse nécessite la lecture d'un tableau ou d'un schéma et charge
+                  la page PDF originale correspondante (repère&nbsp;3, L.&nbsp;195-212).
+                </p>
+                <p>
+                  La <span class="skill-reference blue">Préparation du prompt <span class="skill-reference-note">(bleu)</span></span>
+                  rassemble toutes les pièces (question, historique, textes et images) dans la
+                  méthode <code>_build_messages</code> transmise au modèle de langage (repère&nbsp;4,
+                  L.&nbsp;213).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bilan Technique -->
+        <article id="sub-technique-bilan" class="sub-panel" data-sub="technique-bilan">
+          <header class="trace-header">
+            <p class="trace-label">Bilan &amp; Auto-évaluation — Axe 01</p>
+            <h2 class="page-title">Bilan de l'Axe Technique : Architecture RAG et Développement IA</h2>
+            <p class="trace-subtitle">Traitement de flux textuels, vectorisation sémantique et développement d'API IA</p>
+          </header>
+
+          <div class="bilan-body">
+            <section class="text-block">
+              <h3>Lien avec les traces</h3>
+              <p>
+                <a href="#sub-technique-trace-1" class="trace-link">Trace 1</a> (Chunking &amp; PDF),
+                <a href="#sub-technique-trace-2" class="trace-link">Trace 2</a> (Vectorisation ChromaDB),
+                <a href="#sub-technique-trace-3" class="trace-link">Trace 3</a> (IHM Fetch JS) et
+                <a href="#sub-technique-trace-4" class="trace-link">Trace 4</a> (Pipeline RAG &amp; LLM).
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Contexte d'utilisation</h3>
+              <p>
+                Conception et déploiement de bout en bout d'un chatbot RAG d'entreprise sur l'intranet d'EIMI pour faciliter la recherche documentaire technique.
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Contexte d'apprentissage</h3>
+              <p>
+                À l'IUT, j'avais déjà beaucoup pratiqué Python et JavaScript à travers des projets (API, applications web, bases SQL). En entreprise, j'ai dû appréhender de nouveaux concepts : bases vectorielles, embeddings sémantiques et gestion des prompts multimodaux, appliqués à un cas réel de production.
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Difficultés rencontrées</h3>
+              <p>
+                Gérer le compromis entre la taille des segments (chunk size) et la perte de contexte, éliminer les réponses hors-sujet en calibrant les seuils de distance, et éviter les rechargements de page lors du requêtage asynchrone du modèle.
+              </p>
+            </section>
+
+            <div class="level-comparison-grid">
+              <div class="level-card before">
+                <div class="level-badge">Niveau avant le stage : <span>Moyen</span></div>
+                <p>
+                  Solide pratique de Python et JavaScript acquise en BUT (projets, API, développement web), mais aucune expérience des architectures RAG, des bases vectorielles ni de la liaison entre l'interface web et le serveur d'IA dans une vraie application.
+                </p>
+              </div>
+
+              <div class="level-card after">
+                <div class="level-badge">Niveau après le stage : <span>Bon</span></div>
+                <p>
+                  Capable de concevoir et déployer un pipeline RAG complet (extraction PDF, indexation ChromaDB, interface JavaScript, orchestration LLM), d'ajuster les paramètres techniques (chunking, filtrage par distance) et de livrer un chatbot sur l'intranet EIMI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ═══ AXE 02 — SUIVI DE PROJET ═══ -->
+      <section id="panel-projet" class="page-panel" aria-label="Axe Suivi de projet">
+
+        <p class="page-subtitle">Axe 02 — Savoir-faire général 2</p>
+        <h1 class="page-title">Suivi de projet</h1>
+        <p class="section-block" style="margin-top:-0.5rem;margin-bottom:1rem;font-size:0.88rem;color:var(--text-muted);">
+          Méthodologie, Évaluation et Communication
+        </p>
+
+        <nav class="subnav" aria-label="Sous-navigation Suivi de projet">
+          <a href="#" data-sub="projet-trace-5" class="active">Trace 5</a>
+          <a href="#" data-sub="projet-trace-6">Trace 6</a>
+          <a href="#" data-sub="projet-trace-7">Trace 7</a>
+          <a href="#" data-sub="projet-bilan">Bilan</a>
+        </nav>
+
+        <!-- Trace 5 -->
+        <article id="sub-projet-trace-5" class="sub-panel active" data-sub="projet-trace-5">
+          <header class="trace-header">
+            <p class="trace-label">Trace 5 — Axe Suivi de Projet</p>
+            <h2 class="page-title">Rédaction du cahier des charges fonctionnel et technique pour l'assistant RAG</h2>
+
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Analyse du besoin &amp; Contexte</li>
+              <li class="skill-token violet">Définition des objectifs métier</li>
+              <li class="skill-token orange">Cadrage du périmètre applicatif</li>
+              <li class="skill-token blue">Spécification des fonctionnalités</li>
+              <li class="skill-token red">Identification des contraintes infra</li>
+              <li class="skill-token teal">Formalisation des livrables</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure coral trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace2.1.png" alt="Trace 5 — Cahier des charges fonctionnel et technique annoté du projet Chatbot RAG EIMI — repères vert, violet, orange, bleu, rouge et cyan">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 5 — Cahier des charges fonctionnel &amp; technique&nbsp;: [1] Analyse du besoin &amp; Contexte (vert),
+                [2] Définition des objectifs métier (violet), [3] Cadrage du périmètre applicatif (orange),
+                [4] Spécification des fonctionnalités (bleu), [5] Identification des contraintes infra (rouge),
+                [6] Formalisation des livrables (cyan).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 5 présente le cahier des charges fonctionnel et technique rédigé au début de mon stage chez EIMI. Ce document de cadrage constitue la feuille de route officielle du projet : il fixe le périmètre de l'assistant virtuel RAG, formalise les attentes de l'entreprise et définit les jalons de validation technique.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  L'<span class="skill-reference green">Analyse du besoin &amp; Contexte <span class="skill-reference-note">(vert)</span></span> identifie le problème de l'intranet actuel et la sous-exploitation des procédures EIMI (repère 1 sur l'image).
+                </p>
+                <p>
+                  La <span class="skill-reference violet">Définition des objectifs métier <span class="skill-reference-note">(violet)</span></span> fixe l'ambition de créer un moteur RAG multimodal capable de lire le texte et les visuels des PDF (repère 2).
+                </p>
+                <p>
+                  Le <span class="skill-reference orange">Cadrage du périmètre applicatif <span class="skill-reference-note">(orange)</span></span> délimite clairement le champ d'action du projet (traitement des PDF, mémoire de 6 messages, intégration PHP/JS) pour éviter toute dérive d'objectifs (repère 3).
+                </p>
+                <p>
+                  La <span class="skill-reference blue">Spécification des fonctionnalités <span class="skill-reference-note">(bleu)</span></span> détaille les briques techniques de la chaîne RAG : PyMuPDF, jina-embeddings-v4, ChromaDB et le modèle de langage (repère 4).
+                </p>
+                <p>
+                  L'<span class="skill-reference red">Identification des contraintes infra <span class="skill-reference-note">(rouge)</span></span> anticipe les exigences techniques majeures, notamment le besoin d'un GPU dédié face à l'incompatibilité du CPU local pour la production (repère 5).
+                </p>
+                <p>
+                  La <span class="skill-reference teal">Formalisation des livrables <span class="skill-reference-note">(cyan)</span></span> liste les productions attendues à l'issue du stage (code source, benchmarks chiffrés et dossier de passation) pour garantir la pérennité du projet chez EIMI (repère 6).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 6 -->
+        <article id="sub-projet-trace-6" class="sub-panel" data-sub="projet-trace-6">
+          <header class="trace-header">
+            <p class="trace-label">Trace 6 — Axe Suivi de Projet</p>
+            <h2 class="page-title">Évolution de la communication et de la présentation du planning de projet</h2>
+
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Estimation technique initiale</li>
+              <li class="skill-token violet">Cadrage des fonctionnalités</li>
+              <li class="skill-token orange">Vulgarisation et synthèse métier</li>
+              <li class="skill-token blue">Consolidation du planning global</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure coral trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace2.2.png" alt="Trace 6 — Comparaison des tableaux de durée du projet entre la première et la dernière réunion — repères vert, violet, orange et bleu">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 6 — Comparatif des supports de réunion&nbsp;: [1] Estimation technique initiale (vert),
+                [2] Cadrage des fonctionnalités (violet), [3] Vulgarisation et synthèse métier (orange),
+                [4] Consolidation du planning global (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 6 compare les supports de présentation utilisés lors de la première réunion de cadrage et de la réunion de bilan final chez EIMI. Elle illustre l'évolution de ma posture professionnelle : le passage d'une démarche très détaillée à une communication synthétique et vulgarisée.
+                </p>
+                <p>
+                  Cette comparaison met en évidence une prise de conscience fondamentale au cours de mon stage : la différence majeure entre le monde académique/scolaire, où l'on attend une justification exhaustive de chaque détail technique, et le monde professionnel, où la direction et les décideurs recherchent avant tout la vision globale, la valeur ajoutée et les résultats concrets.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  L'<span class="skill-reference green">Estimation technique initiale <span class="skill-reference-note">(vert)</span></span> a permis lors de la première réunion de découper précisément le pipeline d'indexation (PDF, chunking, embeddings) pour évaluer la charge de travail (repère 1 sur l'image).
+                </p>
+                <p>
+                  Le <span class="skill-reference violet">Cadrage des fonctionnalités <span class="skill-reference-note">(violet)</span></span> détaillait chaque étape de la phase de requête (moteur hybride, LLM, interface) dans une logique très académique de décomposition du problème (repère 2).
+                </p>
+                <p>
+                  La <span class="skill-reference orange">Vulgarisation et synthèse métier <span class="skill-reference-note">(orange)</span></span> reflète mon adaptation aux exigences de l'entreprise : le regroupement des 9 sous-tâches en 2 grands blocs fonctionnels clairs pour aller directement à l'essentiel sans surcharger les décideurs de détails techniques (repère 3).
+                </p>
+                <p>
+                  La <span class="skill-reference blue">Consolidation du planning global <span class="skill-reference-note">(bleu)</span></span> présente le résultat final (28 jours de travail) sous une forme directement exploitable par la direction pour valider le déploiement de la solution RAG (repère 4).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 7 -->
+        <article id="sub-projet-trace-7" class="sub-panel" data-sub="projet-trace-7">
+          <header class="trace-header">
+            <p class="trace-label">Trace 7 — Axe Suivi de Projet</p>
+            <h2 class="page-title">Campagnes de tests et comparaison scientifique des modèles d'embeddings</h2>
+
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Jina v4 — Groupes de 25 voisins</li>
+              <li class="skill-token violet">Cohere v4 — Groupes de 25 voisins</li>
+              <li class="skill-token orange">Jina v4 — Premier voisin direct</li>
+              <li class="skill-token blue">Cohere v4 — Premier voisin direct</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure coral trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace2.3.png" alt="Trace 7 — Graphiques comparatifs des distances sémantiques entre Jina v4 et Cohere v4 — repères vert, violet, orange et bleu">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 7 — Graphiques de benchmark sémantique&nbsp;: [1] Jina v4 — Groupes de 25 voisins (vert),
+                [2] Cohere v4 — Groupes de 25 voisins (violet), [3] Jina v4 — Premier voisin direct (orange),
+                [4] Cohere v4 — Premier voisin direct (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 7 rassemble les graphiques de benchmark comparant deux modèles d'<em>embeddings</em> (<strong>jina-embeddings-v4</strong> en vert et <strong>cohere-v4</strong> en orange). Un modèle d'embeddings convertit le texte en vecteurs pour permettre à l'ordinateur de calculer la <em>distance sémantique</em> entre deux phrases (plus la distance est faible, plus les idées sont proches).
+                </p>
+                <p>
+                  Ce benchmark m'a appris à analyser un besoin d'entreprise sous des contraintes réelles : obligation d'un modèle multimodal (lecture du texte et des schémas), hébergement en local pour préserver la sécurité des données internes d'EIMI, et décision argumentée basée sur des preuves chiffrées.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  Le graphique <span class="skill-reference green">Jina v4 — Groupes de 25 voisins <span class="skill-reference-note">(vert)</span></span> analyse la distance moyenne entre chaque phrase et son groupe de 25 voisins les plus proches. Jina v4 affiche une distance médiane très faible de <strong>0,28</strong>, démontrant une excellente cohésion sémantique (repère 1 sur l'image).
+                </p>
+                <p>
+                  Le graphique <span class="skill-reference violet">Cohere v4 — Groupes de 25 voisins <span class="skill-reference-note">(violet)</span></span> étudie le même indicateur pour Cohere v4. Sa médiane à <strong>0,56</strong> indique des distances deux fois plus étalées, risquant d'inclure des documents moins pertinents (repère 2).
+                </p>
+                <p>
+                  Le graphique <span class="skill-reference orange">Jina v4 — Premier voisin direct <span class="skill-reference-note">(orange)</span></span> mesure la distance exacte avec la phrase la plus proche. Jina obtient une médiane remarquable de <strong>0,15</strong>, garantissant que le document de référence est extrait avec une très haute fidélité (repère 3).
+                </p>
+                <p>
+                  Le graphique <span class="skill-reference blue">Cohere v4 — Premier voisin direct <span class="skill-reference-note">(bleu)</span></span> s'appuie sur la médiane de <strong>0,31</strong> pour Cohere afin de valider définitivement le choix de Jina-embeddings-v4 pour le déploiement sur l'intranet d'EIMI (repère 4).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bilan Projet -->
+        <article id="sub-projet-bilan" class="sub-panel" data-sub="projet-bilan">
+          <header class="trace-header">
+            <p class="trace-label">Bilan &amp; Auto-évaluation — Axe 02</p>
+            <h2 class="page-title">Bilan de l'Axe Suivi de Projet : Méthodologie, Évaluation et Communication</h2>
+            <p class="trace-subtitle">Pilotage de projet informatique, évaluation scientifique de solutions et communication adaptée aux décideurs</p>
+          </header>
+
+          <div class="bilan-body">
+            <section class="text-block">
+              <h3>Lien avec les traces</h3>
+              <p>
+                <a href="#sub-projet-trace-5" class="trace-link">Trace 5</a> (Cahier des charges fonctionnel et technique),
+                <a href="#sub-projet-trace-6" class="trace-link">Trace 6</a> (Évolution des supports de réunion et vulgarisation) et
+                <a href="#sub-projet-trace-7" class="trace-link">Trace 7</a> (Benchmarks d'embeddings et évaluation des performances).
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Contexte d'utilisation</h3>
+              <p>
+                Cadrage, pilotage et évaluation du projet de chatbot RAG chez EIMI, depuis l'analyse initiale des besoins de l'entreprise jusqu'à la formulation des recommandations d'infrastructure matérielle pour le déploiement en production.
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Contexte d'apprentissage</h3>
+              <p>
+                À l'IUT, les projets sont souvent encadrés par un cahier des charges fourni par les professeurs, et les présentations exigent de justifier chaque détail technique (démarche scolaire). En entreprise, j'ai dû rédiger moi-même ce cadrage sous des contraintes réelles (confidentialité, limites matérielles).
+              </p>
+              <p>
+                Surtout, j'ai appris la différence fondamentale avec le monde professionnel : la direction et les décideurs recherchent avant tout une vision globale, de la vulgarisation, des résultats concrets et des preuves chiffrées (benchmarks), et non le détail exhaustif du code.
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Difficultés rencontrées</h3>
+              <p>
+                Estimer avec précision la durée de tâches techniques inédites au début du stage, réussir à vulgariser des concepts complexes (RAG, vectorisation) pour un public non-technique, et concevoir une méthode d'évaluation scientifique fiable pour comparer objectivement deux modèles d'Intelligence Artificielle.
+              </p>
+            </section>
+
+            <div class="level-comparison-grid">
+              <div class="level-card before">
+                <div class="level-badge">Niveau avant le stage : <span>Moyen</span></div>
+                <p>
+                  Habitué à développer à partir de consignes scolaires claires et à présenter des projets de manière très technique. Aucune expérience dans la rédaction de spécifications complètes, dans la réalisation de benchmarks ou dans l'adaptation d'un discours pour des responsables d'entreprise.
+                </p>
+              </div>
+
+              <div class="level-card after">
+                <div class="level-badge">Niveau après le stage : <span>Bon</span></div>
+                <p>
+                  Capable de cadrer un projet de A à Z (périmètre, contraintes, livrables), de mener des campagnes de tests comparatifs rigoureux (analyse de distances sémantiques), d'adapter ma communication en fonction de mon interlocuteur (orientée résultats) et de formuler des recommandations d'architecture argumentées auprès d'une direction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ═══ AXE 03 — INTÉGRATION ═══ -->
+      <section id="panel-integration" class="page-panel" aria-label="Axe Intégration">
+
+        <p class="page-subtitle">Axe 03 — Savoir-faire général 3</p>
+        <h1 class="page-title">Intégration en entreprise</h1>
+        <p class="section-block" style="margin-top:-0.5rem;margin-bottom:1rem;font-size:0.88rem;color:var(--text-muted);">
+          Adaptation culturelle et communication en milieu professionnel
+        </p>
+
+        <nav class="subnav" aria-label="Sous-navigation Intégration">
+          <a href="#" data-sub="integration-trace-8" class="active">Trace 8</a>
+          <a href="#" data-sub="integration-trace-9">Trace 9</a>
+          <a href="#" data-sub="integration-trace-10">Trace 10</a>
+          <a href="#" data-sub="integration-bilan">Bilan</a>
+        </nav>
+
+        <!-- Trace 8 -->
+        <article id="sub-integration-trace-8" class="sub-panel active" data-sub="integration-trace-8">
+          <header class="trace-header">
+            <p class="trace-label">Trace 8 — Axe Intégration en Entreprise</p>
+            <h2 class="page-title">Rédaction du dossier de passation technique et de la documentation d'architecture</h2>
+
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Guide d'installation &amp; API (README)</li>
+              <li class="skill-token violet">Cartographie du code (Passation)</li>
+              <li class="skill-token orange">Procédures de maintenance</li>
+              <li class="skill-token blue">Transmission des évolutions futures</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure violet trace-figure--featured">
+              <div class="trace-carousel" id="carousel-trace-8">
+                <div class="carousel-slides">
+                  <div class="carousel-slide active">
+                    <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                      <img src="trace/trace3.1.2.png" alt="Trace 8 — Extrait du fichier README.md : installation et routes FastAPI">
+                      <span class="trace-image-hint" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                        Agrandir
+                      </span>
+                    </button>
+                    <span class="slide-caption">1/2 : Extrait README.md — Procédure d'installation et routes FastAPI [1]</span>
+                  </div>
+
+                  <div class="carousel-slide">
+                    <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                      <img src="trace/trace3.1.3.png" alt="Trace 8 — Extrait du fichier Passation.md : ordre de lecture, maintenance et évolutions">
+                      <span class="trace-image-hint" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                        Agrandir
+                      </span>
+                    </button>
+                    <span class="slide-caption">2/2 : Extrait Passation.md — Ordre de lecture [2], Maintenance [3] et Évolutions [4]</span>
+                  </div>
+                </div>
+
+                <button type="button" class="carousel-btn prev" aria-label="Image précédente" data-carousel="carousel-trace-8" data-carousel-dir="-1">&#10094;</button>
+                <button type="button" class="carousel-btn next" aria-label="Image suivante" data-carousel="carousel-trace-8" data-carousel-dir="1">&#10095;</button>
+
+                <div class="carousel-dots" role="tablist" aria-label="Pagination du carrousel">
+                  <button type="button" class="dot active" aria-label="Aller à l'image 1" data-carousel="carousel-trace-8" data-carousel-index="0"></button>
+                  <button type="button" class="dot" aria-label="Aller à l'image 2" data-carousel="carousel-trace-8" data-carousel-index="1"></button>
+                </div>
+              </div>
+
+              <figcaption>
+                Trace 8 — Documentation technique et dossier de passation&nbsp;: [1] Guide d'installation &amp; API (vert),
+                [2] Cartographie du code (violet), [3] Procédures de maintenance (orange),
+                [4] Transmission des évolutions futures (bleu).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 8 met en valeur la double documentation technique rédigée pour assurer la pérennité de l'assistant RAG chez EIMI : un fichier <code>README.md</code> destiné à la prise en main rapide et à l'exploitation de l'API, et un fichier <code>Passation.md</code> dédié aux développeurs de l'équipe et au futur alternant pour faciliter la reprise et l'évolution du code interne.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  Le <span class="skill-reference green">Guide d'installation &amp; API (README) <span class="skill-reference-note">(vert)</span></span> explicite les prérequis matériels (Python 3.12, CUDA), détaille la procédure de déploiement en environnement virtuel et documente l'ensemble des routes FastAPI (repère 1 sur les captures).
+                </p>
+                <p>
+                  La <span class="skill-reference violet">Cartographie du code (Passation) <span class="skill-reference-note">(violet)</span></span> structure l'ordre de lecture optimal du projet et détaille le fonctionnement interne du pipeline (découpage PDF, encodage Jina v4, stockage ChromaDB et gestion singleton du LLM) (repère 2).
+                </p>
+                <p>
+                  Les <span class="skill-reference orange">Procédures de maintenance <span class="skill-reference-note">(orange)</span></span> fournissent un guide d'intervention précis pour modifier l'indexation, ajuster les seuils de distance ou créer de nouveaux schémas de requêtes (repère 3).
+                </p>
+                <p>
+                  La <span class="skill-reference blue">Transmission des évolutions futures <span class="skill-reference-note">(bleu)</span></span> formalise la feuille de route pour l'entreprise (filtrage par rôle utilisateur, indexation automatisée, recherche web de secours), garantissant une passation sans perte de contexte (repère 4).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 9 -->
+        <article id="sub-integration-trace-9" class="sub-panel" data-sub="integration-trace-9">
+          <header class="trace-header">
+            <p class="trace-label">Trace 9 — Axe Intégration en Entreprise</p>
+            <h2 class="page-title">Intégration du module RAG dans l'écosystème intranet existant de l'entreprise</h2>
+
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Intégration visuelle &amp; ergonomique</li>
+              <li class="skill-token violet">Accès rapide &amp; ergonomie utilisateur</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure violet trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace3.2.png" alt="Trace 9 — Intégration visuelle du chatbot et du bouton d'accès sur l'intranet Canal EIMI">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 9 — Intégration sur Canal EIMI&nbsp;: [1] Intégration visuelle &amp; ergonomique (vert),
+                [2] Accès rapide &amp; ergonomie utilisateur (violet).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 9 montre comment l'assistant de recherche s'insère directement dans l'intranet de l'entreprise (<em>Canal EIMI</em>). L'objectif était d'ajouter cette nouvelle fonctionnalité de manière simple et intuitive pour les collaborateurs, sans perturber leurs habitudes quotidiennes ni modifier l'organisation des pages existantes.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  L'<span class="skill-reference green">Intégration visuelle &amp; ergonomique <span class="skill-reference-note">(vert)</span></span> correspond à la fenêtre de discussion ouverte directement sur l'écran. L'interface a été conçue pour se fondre totalement dans le style graphique du site (mêmes couleurs bleu et blanc, mêmes polices de texte et boutons arrondis). Les questions sont envoyées de manière transparente au moteur de recherche sans que la page n'ait besoin de se recharger ou de clignoter (repère 1 sur l'image).
+                </p>
+                <p>
+                  L'<span class="skill-reference violet">Accès rapide &amp; ergonomie utilisateur <span class="skill-reference-note">(violet)</span></span> met en avant la petite bulle ronde située en bas à droite de l'écran. Elle permet à chaque employé d'ouvrir l'assistant en un seul clic lorsqu'il a une question, puis de le refermer instantanément pour ne pas encombrer son espace de lecture (repère 2).
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Trace 10 -->
+        <article id="sub-integration-trace-10" class="sub-panel" data-sub="integration-trace-10">
+          <header class="trace-header">
+            <p class="trace-label">Trace 10 — Axe Intégration en Entreprise</p>
+            <h2 class="page-title">Collaboration quotidienne et communication au sein de l'équipe</h2>
+
+            <ul class="skill-tokens" aria-label="Savoir-faire élémentaires">
+              <li class="skill-token green">Coordination interne &amp; Répétition</li>
+              <li class="skill-token violet">Restitution stratégique &amp; Validation</li>
+            </ul>
+          </header>
+
+          <div class="trace-body trace-body--featured">
+            <figure class="trace-figure violet trace-figure--featured">
+              <button type="button" class="trace-image-frame trace-image-frame--zoomable" aria-label="Agrandir la capture d'écran">
+                <img src="trace/trace3.3.png" alt="Trace 10 — Invitations calendrier pour le point préparatoire d'équipe et la réunion avec la direction juridique chez EIMI">
+                <span class="trace-image-hint" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                  Agrandir
+                </span>
+              </button>
+              <figcaption>
+                Trace 10 — Communication d'équipe&nbsp;: [1] Coordination interne &amp; Répétition (vert),
+                [2] Restitution stratégique &amp; Validation (violet).
+              </figcaption>
+            </figure>
+
+            <div class="trace-text">
+              <section class="text-block">
+                <h3>Descriptif général de la trace</h3>
+                <p>
+                  La Trace 10 illustre la dynamique de communication et le travail collaboratif adoptés tout au long de mon stage chez EIMI. Grâce à la proximité directe de nos bureaux en présentiel (mon poste étant situé à côté de celui de mon maître de stage et à quelques pas du chef de service), nous échangions en continu pour orienter les développements et lever rapidement les doutes techniques.
+                </p>
+                <p>
+                  Pour les grandes échéances, nous suivions un rituel d'équipe rigoureux : un point de préparation technique en comité restreint la veille, suivi de la réunion officielle de validation décisionnelle le lendemain.
+                </p>
+              </section>
+
+              <section class="text-block">
+                <h3>Descriptif des savoir-faire</h3>
+                <p>
+                  La <span class="skill-reference green">Coordination interne &amp; Répétition <span class="skill-reference-note">(vert)</span></span> correspond au point préparatoire mené avec mon maître de stage et le chef de service (repère 1 sur l'image). Ce temps d'échange permettait de tester la démonstration de l'assistant, de caler le discours technique et de s'assurer de l'alignement de l'équipe avant la réunion de validation.
+                </p>
+                <p>
+                  La <span class="skill-reference violet">Restitution stratégique &amp; Validation <span class="skill-reference-note">(violet)</span></span> représente la réunion de validation d'avancement menée en présence de la directrice juridique (repère 2). Cette rencontre de haut niveau servait à valider la conformité du traitement des documents internes, à présenter les résultats concrets du RAG et à arbitrer la mise en production sur l'intranet.
+                </p>
+              </section>
+            </div>
+          </div>
+        </article>
+
+        <!-- Bilan Intégration -->
+        <article id="sub-integration-bilan" class="sub-panel" data-sub="integration-bilan">
+          <header class="trace-header">
+            <p class="trace-label">Bilan &amp; Auto-évaluation — Axe 03</p>
+            <h2 class="page-title">Bilan de l'Axe Intégration en Entreprise : Écosystème technique, Passation et Travail d'équipe</h2>
+            <p class="trace-subtitle">Intégration logicielle en environnement existant, formalisation de la documentation de passation et collaboration professionnelle au sein d'une équipe</p>
+          </header>
+
+          <div class="bilan-body">
+            <section class="text-block">
+              <h3>Lien avec les traces</h3>
+              <p>
+                <a href="#sub-integration-trace-8" class="trace-link">Trace 8</a> (Dossier de passation technique et fichiers README/Passation),
+                <a href="#sub-integration-trace-9" class="trace-link">Trace 9</a> (Intégration du widget RAG sur l'intranet Canal EIMI) et
+                <a href="#sub-integration-trace-10" class="trace-link">Trace 10</a> (Collaboration d'équipe et réunions de cadrage/restitution).
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Contexte d'utilisation</h3>
+              <p>
+                Déploiement du module de recherche documentaire dans l'intranet de l'entreprise (Canal EIMI), rédaction des documents assurant la transmission du code au futur alternant et collaboration au quotidien avec le maître de stage, le chef de service et la direction juridique.
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Contexte d'apprentissage</h3>
+              <p>
+                À l'IUT, les projets sont souvent réalisés en binôme d'étudiants sur des bases de code isolées et éphémères, sans enjeu de pérennité à long terme. En entreprise, j'ai appris à inscrire mon travail dans un cadre durable : respecter l'ergonomie et le code PHP/JS existant d'une grande structure, rédiger une documentation technique exploitable sans ma présence (README et guide de passation), et adopter les rituels de communication d'un service (points préparatoires en binôme et réunions de restitution avec les décideurs).
+              </p>
+            </section>
+
+            <section class="text-block">
+              <h3>Difficultés rencontrées</h3>
+              <p>
+                Adapter l'interface de l'assistant sans dénaturer la charte graphique de l'intranet historique, synthétiser un pipeline complexe (RAG, ChromaDB, LLM local) pour le rendre facilement reprenable par un développeur tiers, et trouver le bon niveau de vulgarisation lors des points de restitution avec des profils non-techniques (direction juridique).
+              </p>
+            </section>
+
+            <div class="level-comparison-grid">
+              <div class="level-card before">
+                <div class="level-badge">Niveau avant le stage : <span>Moyen</span></div>
+                <p>
+                  Expérience du travail de groupe scolaire, mais aucune pratique de l'intégration logicielle sur un intranet en production, de la rédaction de documents de passation professionnels ou des réunions d'arbitrage en milieu d'entreprise.
+                </p>
+              </div>
+
+              <div class="level-card after">
+                <div class="level-badge">Niveau après le stage : <span>Bon</span></div>
+                <p>
+                  Capable d'insérer un module applicatif dans un environnement d'entreprise existant, de structurer une documentation technique complète pour pérenniser un projet, et de collaborer efficacement au quotidien en adaptant ma communication aux différents interlocuteurs (tuteur, management, direction).
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="image-lightbox" id="image-lightbox" hidden aria-hidden="true">
+    <div class="image-lightbox-backdrop" data-lightbox-close></div>
+    <div class="image-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+      <button type="button" class="image-lightbox-close" data-lightbox-close aria-label="Fermer l'aperçu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+      </button>
+      <figure class="image-lightbox-content">
+        <img id="lightbox-img" src="" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
